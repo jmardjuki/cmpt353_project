@@ -6,7 +6,7 @@ The first thing we tried to find out is whether the audience reviews and critics
 
 The next question that we tried to understand is whether we can predict if a movie made profit just by using their average 'ratings'. We did supervised learning for this specific problem. We set the 'ratings' as the unlabeled observation X, and set the 'made profit' as the predicted labels y. We used three different models for the prediction which all three gave "good" accuracy at 0.8 range. We discovered that there is sample imbalance in this in which there are more movies that make profit which is about 80% of the total sample. We decided to fix this sample imbalance by dropping the sample that made profit, so that the percentage of both samples are about 50-50. After fixing this, we tried scoring the prediction again but unfortunately, the score could only reach 0.7 which is not good enough. We concluded that it is not possible to predict if a movie going to be successful just based on the ratings.
 
-For the last part, we would like to know if the movies that made profit has higher rating. We used Mann-Whitney-U test on both ratings. The p-value was lesser than 0
+For the last part, we would like to know if the movies that made profit has higher rating. We used Mann-Whitney-U test on both ratings. The p-value was lesser than 0.05, thus we can reject the null hypothesis that the movies that made profit has higher ratings.
 
 
 ### Dependancies
